@@ -1,3 +1,4 @@
+* 1e747fd : add page_num function
 * 976ff6e : add init file
 *   b767ea5 : Merge branch 'dev'
 |\  
