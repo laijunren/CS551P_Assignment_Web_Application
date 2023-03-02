@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Style Of Art</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Back</a>
+    </nav>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Here are some artists with more tags. Click them to view the specific tags</h4>
+                <h3 class="text-center">Artists:</h3>
+                <ol>
+
+                </ol>
+            </div>
+            <div class="row row-cols-4">
+                {% for item in artist %}
+                    <p>{{ loop.index }}. <a href="/artist_detail/{{ item.0.0 }}/">{{ item.0.0 }}</a></p>
+                {% endfor %}
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

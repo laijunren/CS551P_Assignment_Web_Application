@@ -1,0 +1,15 @@
+* 976ff6e : add init file
+*   b767ea5 : Merge branch 'dev'
+|\  
+| * 627c604 : rewrite index.html
+* | a80a7f9 : change chrome headless
+* | c498795 : readme
+* | 445afa5 : Test the project
+* | 4bbb890 : requirements.txt
+|/  
+* 99c1509 : Finished
+* 3c7c797 : Finished displaying the term page
+* ffddbec : Finished displaying the mbtag page
+* 443b018 : Deprecated the database connection provided by SQLAlchemy and switched to using sqlite3 to connect to the database. We also added a script to initialize the database and the home page now calculates the count from the database.
+* f9c375c : Create a database, initialize the database, and try to load test data in the page
+* 524754b : init

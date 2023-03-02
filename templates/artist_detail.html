@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Style Of Art</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">Back</a>
+    </nav>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Artists:{{ artist_id }}</h3>
+            </div>
+            <div class="col-md-12">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <td>Artist</td>
+                            <td nowrap="">Mb Tag</td>
+                            <td>Term</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>{{ artist_id }}</td>
+                            <td>{% for mb_tag in mbtag %}{{ mb_tag.0 }}、{% endfor %}</td>
+                            <td>{% for term in term %}{{ term.0 }}、{% endfor %}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

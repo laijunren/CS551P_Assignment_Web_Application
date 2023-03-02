@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Style Of Art</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #333;
+            background-color: #f7f7f7;
+        }
+        h1 {
+            margin-top: 32px;
+            margin-bottom: 16px;
+            font-size: 32px;
+            font-weight: bold;
+            color: #007bff;
+            text-align: center;
+        }
+        h3 {
+            margin-top: 32px;
+            margin-bottom: 16px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #007bff;
+            text-align: center;
+        }
+        p {
+            margin-top: 16px;
+            margin-bottom: 16px;
+            font-size: 18px;
+            text-align: center;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>Data investigation and analysis on the style of music artists</h1>
+        <h3>Here we collected tags (Echo Nest and MusicBrainz) from {{ artist_num }} artists and conducted limited statistical analysis.</h3>
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <p>You can click <a href="/artist_mgtag">here</a> to view the data relationship between artists and MBTAG.</p>
+            </div>
+            <div class="col-md-6">
+                <p>You can click <a href="/artist_term">here</a> to view the data relationship between artists and TREM.</p>
+            </div>
+            <div class="col-md-6">
+                <p class="text-left">You can click <a href="/artist">here</a> to view the artist and its tag content</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
